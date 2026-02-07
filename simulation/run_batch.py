@@ -8,6 +8,7 @@ import json
 import time
 from datetime import datetime
 import requests
+import os
 
 # Backend API endpoint (update when Ahmed deploys)
 BACKEND_URL = "http://localhost:8000"
@@ -93,8 +94,10 @@ def run_batch_simulations(num_runs=100):
         status = "✅ SUCCESS" if result["success"] else "❌ FAILED"
         print(f"{run_id}: {status} | w={weight:.2f}kg f={friction:.2f} l={lighting:.2f}")
     
-    # Save to file
-    output_file = f"simulation/outputs/batch_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    # Save to file (FIXED PATH)
+    os.makedirs('outputs', exist_ok=True)
+    output_file = f"outputs/batch_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    
     with open(output_file, 'w') as f:
         json.dump(results, f, indent=2)
     
