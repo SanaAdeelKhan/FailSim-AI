@@ -11,7 +11,7 @@ import requests
 import os
 
 # Backend API endpoint (update when Ahmed deploys)
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = "http://80.240.20.49:8000"
 
 def simulate_pick_and_place(run_id, weight, friction, lighting):
     """
