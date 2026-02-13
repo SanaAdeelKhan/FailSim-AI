@@ -1,0 +1,902 @@
+[
+  {
+    "run_id": "run_000",
+    "friction": 0.78,
+    "object_mass": 0.67,
+    "lighting": 0.73,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_001",
+    "friction": 0.18,
+    "object_mass": 0.57,
+    "lighting": 0.73,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_002",
+    "friction": 0.29,
+    "object_mass": 0.42,
+    "lighting": 0.54,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_003",
+    "friction": 0.38,
+    "object_mass": 0.56,
+    "lighting": 0.63,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_004",
+    "friction": 0.61,
+    "object_mass": 0.12,
+    "lighting": 0.57,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_005",
+    "friction": 0.47,
+    "object_mass": 0.86,
+    "lighting": 0.91,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_006",
+    "friction": 0.21,
+    "object_mass": 0.46,
+    "lighting": 0.88,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_007",
+    "friction": 0.68,
+    "object_mass": 0.97,
+    "lighting": 0.63,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_008",
+    "friction": 0.41,
+    "object_mass": 0.75,
+    "lighting": 0.5,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_009",
+    "friction": 0.32,
+    "object_mass": 0.17,
+    "lighting": 0.89,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_010",
+    "friction": 0.15,
+    "object_mass": 0.45,
+    "lighting": 0.6,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_011",
+    "friction": 0.79,
+    "object_mass": 0.38,
+    "lighting": 0.97,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_012",
+    "friction": 0.45,
+    "object_mass": 0.95,
+    "lighting": 0.79,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_013",
+    "friction": 0.31,
+    "object_mass": 0.7,
+    "lighting": 0.66,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_014",
+    "friction": 0.27,
+    "object_mass": 0.54,
+    "lighting": 0.78,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_015",
+    "friction": 0.69,
+    "object_mass": 0.83,
+    "lighting": 0.67,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_016",
+    "friction": 0.51,
+    "object_mass": 0.14,
+    "lighting": 0.65,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_017",
+    "friction": 0.84,
+    "object_mass": 0.65,
+    "lighting": 0.85,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_018",
+    "friction": 0.61,
+    "object_mass": 0.37,
+    "lighting": 0.55,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_019",
+    "friction": 0.56,
+    "object_mass": 0.47,
+    "lighting": 0.6,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_020",
+    "friction": 0.35,
+    "object_mass": 0.65,
+    "lighting": 0.91,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_021",
+    "friction": 0.68,
+    "object_mass": 0.78,
+    "lighting": 0.76,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_022",
+    "friction": 0.2,
+    "object_mass": 0.89,
+    "lighting": 0.75,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_023",
+    "friction": 0.63,
+    "object_mass": 0.76,
+    "lighting": 0.89,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_024",
+    "friction": 0.58,
+    "object_mass": 0.91,
+    "lighting": 0.82,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_025",
+    "friction": 0.42,
+    "object_mass": 0.46,
+    "lighting": 0.53,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_026",
+    "friction": 0.22,
+    "object_mass": 0.35,
+    "lighting": 0.93,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_027",
+    "friction": 0.28,
+    "object_mass": 0.81,
+    "lighting": 0.94,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_028",
+    "friction": 0.27,
+    "object_mass": 0.3,
+    "lighting": 0.7,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_029",
+    "friction": 0.51,
+    "object_mass": 0.22,
+    "lighting": 0.94,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_030",
+    "friction": 0.67,
+    "object_mass": 0.4,
+    "lighting": 0.79,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_031",
+    "friction": 0.24,
+    "object_mass": 0.9,
+    "lighting": 0.67,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_032",
+    "friction": 0.38,
+    "object_mass": 0.52,
+    "lighting": 0.53,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_033",
+    "friction": 0.84,
+    "object_mass": 0.94,
+    "lighting": 0.96,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_034",
+    "friction": 0.58,
+    "object_mass": 0.56,
+    "lighting": 0.83,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_035",
+    "friction": 0.54,
+    "object_mass": 0.4,
+    "lighting": 0.61,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_036",
+    "friction": 0.63,
+    "object_mass": 0.71,
+    "lighting": 0.81,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_037",
+    "friction": 0.22,
+    "object_mass": 0.55,
+    "lighting": 0.57,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_038",
+    "friction": 0.4,
+    "object_mass": 0.13,
+    "lighting": 0.86,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_039",
+    "friction": 0.16,
+    "object_mass": 0.65,
+    "lighting": 0.67,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_040",
+    "friction": 0.3,
+    "object_mass": 0.48,
+    "lighting": 0.8,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_041",
+    "friction": 0.2,
+    "object_mass": 0.64,
+    "lighting": 0.59,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_042",
+    "friction": 0.6,
+    "object_mass": 0.84,
+    "lighting": 0.58,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_043",
+    "friction": 0.18,
+    "object_mass": 0.12,
+    "lighting": 0.78,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_044",
+    "friction": 0.23,
+    "object_mass": 0.89,
+    "lighting": 0.55,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_045",
+    "friction": 0.77,
+    "object_mass": 0.11,
+    "lighting": 0.93,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_046",
+    "friction": 0.38,
+    "object_mass": 0.36,
+    "lighting": 0.91,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_047",
+    "friction": 0.7,
+    "object_mass": 0.79,
+    "lighting": 0.83,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_048",
+    "friction": 0.76,
+    "object_mass": 0.2,
+    "lighting": 0.69,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_049",
+    "friction": 0.18,
+    "object_mass": 0.79,
+    "lighting": 0.5,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_050",
+    "friction": 0.64,
+    "object_mass": 0.54,
+    "lighting": 0.59,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_051",
+    "friction": 0.25,
+    "object_mass": 0.74,
+    "lighting": 1.0,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_052",
+    "friction": 0.16,
+    "object_mass": 0.46,
+    "lighting": 0.57,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_053",
+    "friction": 0.68,
+    "object_mass": 0.78,
+    "lighting": 0.53,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_054",
+    "friction": 0.4,
+    "object_mass": 0.63,
+    "lighting": 0.82,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_055",
+    "friction": 0.23,
+    "object_mass": 0.87,
+    "lighting": 0.63,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_056",
+    "friction": 0.8,
+    "object_mass": 0.51,
+    "lighting": 0.89,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_057",
+    "friction": 0.75,
+    "object_mass": 0.13,
+    "lighting": 0.78,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_058",
+    "friction": 0.81,
+    "object_mass": 0.91,
+    "lighting": 0.71,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_059",
+    "friction": 0.6,
+    "object_mass": 0.34,
+    "lighting": 0.87,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_060",
+    "friction": 0.87,
+    "object_mass": 0.53,
+    "lighting": 0.6,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_061",
+    "friction": 0.6,
+    "object_mass": 0.9,
+    "lighting": 0.84,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_062",
+    "friction": 0.15,
+    "object_mass": 0.85,
+    "lighting": 0.91,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_063",
+    "friction": 0.29,
+    "object_mass": 0.32,
+    "lighting": 1.0,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_064",
+    "friction": 0.74,
+    "object_mass": 0.28,
+    "lighting": 0.83,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_065",
+    "friction": 0.32,
+    "object_mass": 0.27,
+    "lighting": 0.71,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_066",
+    "friction": 0.63,
+    "object_mass": 0.82,
+    "lighting": 0.71,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_067",
+    "friction": 0.22,
+    "object_mass": 0.47,
+    "lighting": 0.66,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_068",
+    "friction": 0.85,
+    "object_mass": 0.46,
+    "lighting": 0.61,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_069",
+    "friction": 0.58,
+    "object_mass": 0.95,
+    "lighting": 0.98,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_070",
+    "friction": 0.65,
+    "object_mass": 0.83,
+    "lighting": 0.53,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_071",
+    "friction": 0.14,
+    "object_mass": 0.57,
+    "lighting": 0.57,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_072",
+    "friction": 0.63,
+    "object_mass": 0.1,
+    "lighting": 0.69,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_073",
+    "friction": 0.52,
+    "object_mass": 0.15,
+    "lighting": 0.57,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_074",
+    "friction": 0.87,
+    "object_mass": 0.91,
+    "lighting": 0.62,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_075",
+    "friction": 0.8,
+    "object_mass": 0.49,
+    "lighting": 0.92,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_076",
+    "friction": 0.31,
+    "object_mass": 0.98,
+    "lighting": 0.58,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_077",
+    "friction": 0.85,
+    "object_mass": 0.85,
+    "lighting": 0.98,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_078",
+    "friction": 0.31,
+    "object_mass": 0.7,
+    "lighting": 0.65,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_079",
+    "friction": 0.81,
+    "object_mass": 0.89,
+    "lighting": 0.62,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_080",
+    "friction": 0.76,
+    "object_mass": 0.17,
+    "lighting": 0.79,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_081",
+    "friction": 0.54,
+    "object_mass": 0.82,
+    "lighting": 0.77,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_082",
+    "friction": 0.63,
+    "object_mass": 0.89,
+    "lighting": 0.94,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_083",
+    "friction": 0.85,
+    "object_mass": 0.61,
+    "lighting": 0.79,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_084",
+    "friction": 0.31,
+    "object_mass": 0.89,
+    "lighting": 0.72,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_085",
+    "friction": 0.33,
+    "object_mass": 0.8,
+    "lighting": 0.88,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_086",
+    "friction": 0.33,
+    "object_mass": 0.9,
+    "lighting": 0.61,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_087",
+    "friction": 0.55,
+    "object_mass": 0.34,
+    "lighting": 0.68,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_088",
+    "friction": 0.38,
+    "object_mass": 0.98,
+    "lighting": 0.61,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_089",
+    "friction": 0.78,
+    "object_mass": 1.0,
+    "lighting": 0.59,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_090",
+    "friction": 0.37,
+    "object_mass": 0.65,
+    "lighting": 0.51,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_091",
+    "friction": 0.73,
+    "object_mass": 0.26,
+    "lighting": 0.6,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_092",
+    "friction": 0.88,
+    "object_mass": 0.88,
+    "lighting": 0.63,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_093",
+    "friction": 0.79,
+    "object_mass": 0.22,
+    "lighting": 0.61,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_094",
+    "friction": 0.22,
+    "object_mass": 0.57,
+    "lighting": 0.82,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_095",
+    "friction": 0.28,
+    "object_mass": 0.36,
+    "lighting": 0.74,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_096",
+    "friction": 0.26,
+    "object_mass": 0.97,
+    "lighting": 0.97,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_097",
+    "friction": 0.6,
+    "object_mass": 0.39,
+    "lighting": 0.9,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  },
+  {
+    "run_id": "run_098",
+    "friction": 0.23,
+    "object_mass": 0.94,
+    "lighting": 0.88,
+    "success": false,
+    "error_type": "Slip",
+    "final_height": 0.02
+  },
+  {
+    "run_id": "run_099",
+    "friction": 0.84,
+    "object_mass": 0.28,
+    "lighting": 0.84,
+    "success": true,
+    "error_type": null,
+    "final_height": 0.5
+  }
+]

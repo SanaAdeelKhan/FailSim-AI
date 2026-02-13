@@ -20,7 +20,7 @@ except ImportError:
     print("⚠️  PyBullet not found - install with: pip install pybullet")
     sys.exit(1)
 
-BACKEND_URL = "http://80.240.20.49:8000"
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 def run_batch_simulations(num_runs=100):
     """Run batch of randomized simulations with REAL robot"""
