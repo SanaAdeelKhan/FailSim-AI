@@ -96,10 +96,10 @@ FORMAT YOUR RESPONSE EXACTLY LIKE THIS:
     try:
         # Call Gemini 2.5 Flash (latest stable model)
         print(f"\n🤖 Calling Gemini API...")
-        print(f"   Model: gemini-3-flash-preview")
+        print(f"   Model: gemini-2.5-flash")
         print(f"   Analyzing {total_failures} failures...")
         
-        model = genai.GenerativeModel('gemini-3-flash-preview')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         response = model.generate_content(prompt)
         
         print(f"✅ Gemini responded successfully")

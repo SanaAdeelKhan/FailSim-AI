@@ -13,7 +13,8 @@ from robot_specs import KukaIIWA7Specs
 class PickPlaceRobot:
     """Kuka iiwa7 robot with REALISTIC failure modeling"""
     
-    def __init__(self, gui=False):
+    def __init__(self, gui=False, robot_type="kuka_iiwa7"):
+        self.robot_type = robot_type
         if gui:
             self.client = p.connect(p.GUI)
         else:
@@ -124,6 +125,106 @@ class PickPlaceRobot:
         p.disconnect(self.client)
 
 
+    def capture_simulation_frames(self, weight, friction, lighting, num_frames=5):
+        """Capture actual simulation frames with robot movement"""
+        import base64
+        from io import BytesIO
+        try:
+            from PIL import Image
+            import numpy as np
+        except ImportError:
+            return self._placeholder_frames()
+        
+        # Reset and setup
+        p.resetSimulation(physicsClientId=self.client)
+        p.setGravity(0, 0, -9.81, physicsClientId=self.client)
+        p.loadURDF("plane.urdf", [0, 0, 0], physicsClientId=self.client)
+        
+        # Load robot
+        robot_id = p.loadURDF(self._get_robot_urdf(), [0, 0, 0], useFixedBase=True, physicsClientId=self.client)
+        
+        # Load object
+        object_id = p.loadURDF("cube_small.urdf", [0.5, 0, 0.1], physicsClientId=self.client)
+        p.changeDynamics(object_id, -1, mass=weight, lateralFriction=friction, physicsClientId=self.client)
+        
+        frames = []
+        positions = [
+            [0, 0, 0, 0, 0, 0],  # Start - rest
+            [0.5, -0.3, 0.3, 0, 0.5, 0],  # Approach
+            [0.8, -0.5, 0.5, 0.3, 0.8, 0],  # Grasp
+            [0.5, 0.2, 0.8, -0.3, 0.5, 0],  # Lift
+            [0, 0.5, 0.5, 0, 0, 0]  # End
+        ]
+        
+        for idx, target_pos in enumerate(positions):
+            # Move robot to position
+            num_joints = min(6, p.getNumJoints(robot_id, physicsClientId=self.client))
+            for j in range(num_joints):
+                p.setJointMotorControl2(
+                    robot_id, j, p.POSITION_CONTROL,
+                    targetPosition=target_pos[j],
+                    force=500,
+                    physicsClientId=self.client
+                )
+            
+            # Simulate movement
+            for _ in range(60):
+                p.stepSimulation(physicsClientId=self.client)
+            
+            # Capture frame
+            view_matrix = p.computeViewMatrixFromYawPitchRoll(
+                cameraTargetPosition=[0.3, 0, 0.3],
+                distance=1.2,
+                yaw=45 + idx*15,  # Rotate camera slightly each frame
+                pitch=-25,
+                roll=0,
+                upAxisIndex=2
+            )
+            proj_matrix = p.computeProjectionMatrixFOV(
+                fov=60, aspect=640/480, nearVal=0.1, farVal=100
+            )
+            
+            width, height = 640, 480
+            img_data = p.getCameraImage(
+                width, height,
+                viewMatrix=view_matrix,
+                projectionMatrix=proj_matrix,
+                renderer=p.ER_BULLET_HARDWARE_OPENGL,
+                physicsClientId=self.client
+            )
+            
+            # Convert to base64
+            rgb_array = np.array(img_data[2], dtype=np.uint8).reshape(height, width, 4)[:, :, :3]
+            image = Image.fromarray(rgb_array)
+            buffered = BytesIO()
+            image.save(buffered, format="PNG")
+            img_str = base64.b64encode(buffered.getvalue()).decode()
+            
+            label = ["Start", "Approach", "Grasp", "Lift", "End"][idx]
+            frames.append({
+                "step": idx * 60,
+                "label": label,
+                "image": f"data:image/png;base64,{img_str}"
+            })
+        
+        return frames
+    
+
+    def _get_robot_urdf(self):
+        """Get URDF path based on robot type"""
+        urdf_map = {
+            "kuka_iiwa7": "kuka_iiwa/model.urdf",
+            "franka_panda": "franka_panda/panda.urdf",
+            "ur5": "kuka_iiwa/model.urdf"  # UR5 not available, using Kuka
+        }
+        return urdf_map.get(self.robot_type, "kuka_iiwa/model.urdf")
+    def _placeholder_frames(self):
+        """Fallback placeholder frames"""
+        return [
+            {"step": i*60, "label": label, "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="}
+            for i, label in enumerate(["Start", "Approach", "Grasp", "Lift", "End"])
+        ]
+
 def test_physics_driven_failures():
     """Test that failures are driven by real physics"""
     
@@ -175,15 +276,7 @@ def test_physics_driven_failures():
         print(f"   • Distance: {dist_error*1000:.1f}mm")
         
         results.append({'case': name, 'success': success, 'error_type': error_type})
-    
-    robot.close()
-    
-    print("\n" + "="*70)
-    print("📊 SUMMARY:")
-    successes = sum(1 for r in results if r['success'])
-    print(f"  Successes: {successes}/{len(results)}")
-    print(f"  Failures: {len(results) - successes}/{len(results)}")
-    print("\n✅ Fixed simulation ready!")
-
 if __name__ == "__main__":
     test_physics_driven_failures()
+
+
