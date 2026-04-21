@@ -3,7 +3,7 @@ fastapi==0.115.12
 uvicorn[standard]==0.34.0
 pydantic==2.10.6
 pydantic-settings==2.10.1
-
+pybullet
 # Google AI
 google-generativeai==0.8.3
 
